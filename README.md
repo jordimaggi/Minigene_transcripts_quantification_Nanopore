@@ -2,7 +2,7 @@
 
 Repository for scripts used to clean NanoSplicer output data. The script uses a `.gff3` file containing coordinates of known exons included in the minigene constructs to identify and annotate transcripts based on the splice junctions detected by the `JWR_checker.py` script from [NanoSplicer](https://github.com/shimlab/NanoSplicer).
 
-The script's input include a gff3 file containing coordinates of known exons included in the minigene constructs, and a .csv file created by the `JWR_checker.py` script from [NanoSplicer](https://github.com/shimlab/NanoSplicer) with the following command:
+The script's input include a sample_ID text file, a `.gff3` file containing coordinates of known exons included in the minigene constructs, and a `.csv` file created by the `JWR_checker.py` script from [NanoSplicer](https://github.com/shimlab/NanoSplicer) with the following command:
 
 ```python
 python3 JWR_checker.py --threads 10 --output_csv {sample}_{MT/WT}.bam NP_{sample}_{MT/WT}_NanoSplicer.hdf5
